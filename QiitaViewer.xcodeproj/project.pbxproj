@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5D3CDDC209F82AF00BC8472 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D3CDDA209F82AF00BC8472 /* SwiftyJSON.framework */; };
+		A5D3CDDD209F82AF00BC8472 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D3CDDB209F82AF00BC8472 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A5D3CDE020A0106A00BC8472 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3CDDF20A0106A00BC8472 /* ArticleListViewController.swift */; };
 		A5EEA183209CDD6600C84502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EEA182209CDD6600C84502 /* AppDelegate.swift */; };
-		A5EEA185209CDD6600C84502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EEA184209CDD6600C84502 /* ViewController.swift */; };
 		A5EEA188209CDD6600C84502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EEA186209CDD6600C84502 /* Main.storyboard */; };
 		A5EEA18A209CDD6700C84502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EEA189209CDD6700C84502 /* Assets.xcassets */; };
 		A5EEA18D209CDD6700C84502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EEA18B209CDD6700C84502 /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5D3CDDA209F82AF00BC8472 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A5D3CDDB209F82AF00BC8472 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A5D3CDDF20A0106A00BC8472 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		A5EEA17F209CDD6600C84502 /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EEA182209CDD6600C84502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5EEA184209CDD6600C84502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5EEA187209CDD6600C84502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5EEA189209CDD6700C84502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5EEA18C209CDD6700C84502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D3CDDC209F82AF00BC8472 /* SwiftyJSON.framework in Frameworks */,
+				A5D3CDDD209F82AF00BC8472 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5D3CDD9209F82AF00BC8472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3CDDB209F82AF00BC8472 /* Alamofire.framework */,
+				A5D3CDDA209F82AF00BC8472 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5EEA176209CDD6600C84502 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 				A5EEA196209CDD6700C84502 /* QiitaViewerTests */,
 				A5EEA1A1209CDD6700C84502 /* QiitaViewerUITests */,
 				A5EEA180209CDD6600C84502 /* Products */,
+				A5D3CDD9209F82AF00BC8472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				A5EEA182209CDD6600C84502 /* AppDelegate.swift */,
-				A5EEA184209CDD6600C84502 /* ViewController.swift */,
 				A5EEA186209CDD6600C84502 /* Main.storyboard */,
+				A5D3CDDF20A0106A00BC8472 /* ArticleListViewController.swift */,
 				A5EEA189209CDD6700C84502 /* Assets.xcassets */,
 				A5EEA18B209CDD6700C84502 /* LaunchScreen.storyboard */,
 				A5EEA18E209CDD6700C84502 /* Info.plist */,
@@ -135,6 +151,7 @@
 				A5EEA17B209CDD6600C84502 /* Sources */,
 				A5EEA17C209CDD6600C84502 /* Frameworks */,
 				A5EEA17D209CDD6600C84502 /* Resources */,
+				A5D3CDDE209F82C800BC8472 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,13 +268,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5D3CDDE209F82C800BC8472 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5EEA17B209CDD6600C84502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5EEA185209CDD6600C84502 /* ViewController.swift in Sources */,
 				A5EEA183209CDD6600C84502 /* AppDelegate.swift in Sources */,
+				A5D3CDE020A0106A00BC8472 /* ArticleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +467,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZVEPY7H7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +489,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZVEPY7H7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
